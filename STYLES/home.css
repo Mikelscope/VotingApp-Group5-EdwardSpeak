@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Monument-Extended';
+    src: url(../FONTS/MonumentExtended-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Monument-Extended;
+    box-sizing: border-box;
+    
+}
+#container{
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+    min-height: 100vh;
+    /* position: relative; */
+}
+#nav-bar{
+    background-color: rgb(0,160,227);
+   width: 100vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow:  rgb(43, 42, 42) 2px 2px 5px;
+    position: fixed;
+}
+#left-nav{
+    display: flex;
+    align-items: center;
+}
+#right-nav ul{
+    list-style: none;
+    text-align: right;
+    display: inline-flex;
+    margin-right: 70px;
+}
+#right-nav a{
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+#right-nav a:hover{
+    color: black;
+    transition: color 0.5s;
+    background-color: white;
+}
+
+
+#check-logo{
+    width: 50px;
+    padding: 5px 5px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ #left-items{
+    width: 40%;
+    flex-basis: 40%;
+}
+#right-items{
+    flex-basis: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+#main-body{
+    width: 100vw;
+    padding: 130px 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    overflow: hidden;
+    line-height: 3.7em;
+    
+    
+}
+header{
+    font-size: 3em;
+    /* width: 30vw; */
+    /* min-width: 400px; */
+    max-width: 400px;
+}
+#best-tech-lord{
+    color: rgb(0,160,227);
+}
+#main-paragraph{
+    font-size: 0.8em;
+    width: 60vw;
+    padding-top: 20px;
+    font-family: poppins;
+    
+
+}
+em{
+    font-weight: 300;
+    font-style: normal;
+}
+button a{
+    padding: 20px;
+    background-color: rgb(0,160,227);
+    color: white;
+
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    box-shadow:  rgba(77, 77, 77, 0.575) 2px 2px 1px;
+}
+#vote-now a{
+color: white;
+text-decoration: none;
+}
+#vote-now{
+    background-color: none;
+}
+button a:hover{
+    padding-right: 50px;
+    transition: padding-right 1s;
+    box-shadow:  rgb(77, 77, 77) 2px 2px 5px;
+
+}
+#blue-circle-1{
+    width: 220px;
+    height: 220px;
+    /* height: 120px; */
+    background-color: rgb(0,160,227);
+    border-radius: 50%;
+    border: 10px solid rgb(172, 231, 255);
+    display: flex;
+    position: absolute;
+
+}#blue-circle-2{
+    width: 110px;
+    height: 110px;
+    /* height: 120px; */
+    background-color: rgb(0,160,227);
+    border-radius: 50%;
+    border: 10px solid rgb(172, 231, 255);
+    display: flex;
+    position: absolute;
+
+}
+#edward-1, #edward-2, #elon-1, #elon-2{
+    width: 200px;
+    position: relative;
+    top: -15px;
+    left: 10px;
+}
+#elon-2, #edward-2{
+    width: 110px;
+    top: -15px;
+    left: 0;
+}
+#edward-1{
+    width: 195px;
+    left: 12px;
+    top: -45px;
+    
+}
+#elon-2{
+    width: 95px;
+    top: -4px;
+    left: 7px;
+
+}
+#edward-1-container{
+    position: relative;
+    top: -100px;
+    left: -20px;
+}
+#edward-2-container{
+    position: relative;
+    top: -10px;
+    right: -30px;
+}
+#elon-2-container{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+@media screen and (max-width: 375px) {
+    #main-body{
+        display: block;
+        overflow: hidden;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    #left-items{
+        text-align: center;
+        width: 100vw;
+        font-size: 0.8em;
+        margin-top: 60px;
+    }
+    #nav-bar{
+        font-size: 0.7em;
+        z-index: 4;
+    }
+    header{
+        max-width: 90vw;
+    }
+    #main-paragraph{
+        width: 90vw;
+    }
+    #right-nav ul{
+        margin-right: 2px;
+    }
+    #right-nav a{
+        margin-right: 10px;
+    }
+    #right-items{
+        margin-top: 60px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100vw;
+        /* display: flex;
+        flex-basis: 10%; */
+        justify-content: center;
+        grid-template-columns: 200px 200px;
+    }
+    #main-body{
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin: 30px auto;
+        position: absolute;
+        top: 660px;
+        right: 35%;
+    }
+    #blue-circle-1{
+        width: 170px;
+        height: 170px;
+        /* height: 120px; */
+        background-color: rgb(0,160,227);
+        border-radius: 50%;
+        border: 10px solid rgb(172, 231, 255);
+        display: flex;
+        position: absolute;
+    
+    }#blue-circle-2{
+        width: 70px;
+        height: 70px;
+        /* height: 120px; */
+        background-color: rgb(0,160,227);
+        border-radius: 50%;
+        border: 10px solid rgb(172, 231, 255);
+        display: flex;
+        position: absolute;
+    
+    }
+    #edward-1, #edward-2, #elon-1, #elon-2{
+        width: 150px;
+        position: relative;
+        top: -15px;
+        left: 10px;
+    }
+    #elon-2, #edward-2{
+        width: 80px;
+        top: -15px;
+        left: 0;
+    }
+    #edward-1{
+        width: 150px;
+        left: 12px;
+        top: -35px;
+        
+    }
+    #elon-1-container{
+        flex-basis: 10%;
+    }
+    #edward-1-container{
+        position: relative;
+        top: -100px;
+        left: -20px;
+    }
+    #edward-2-container{
+        position: relative;
+        top: -10px;
+        right: -30px;
+    }
+    #elon-2-container{
+        position: relative;
+        top: 20px;
+        left: 40px;
+    }
+    
+}
+@media screen and (max-width: 760px) {
+    #header{
+        width: 70vw;
+
+    }
+    #main-paragraph{
+        font-size: 1.2em;
+    }
+    #main-body{
+        display: block;
+        overflow: hidden;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    #left-items{
+        text-align: center;
+        width: 100vw;
+        font-size: 0.8em;
+        margin-top: 60px;
+    }
+    #nav-bar{
+        font-size: 0.7em;
+        z-index: 4;
+    }
+    header{
+        max-width: 90vw;
+    }
+    #main-paragraph{
+        width: 90vw;
+    }
+    #right-nav ul{
+        margin-right: 2px;
+    }
+    #right-nav a{
+        margin-right: 10px;
+    }
+    #right-items{
+        margin-top: 60px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100vw;
+        /* display: flex;
+        flex-basis: 10%; */
+        justify-content: center;
+        grid-template-columns: 200px 200px;
+    }
+    #main-body{
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin: 30px auto;
+        position: absolute;
+        top: 700px;
+        right: 30%;
+        /* width: 100vw; */
+        margin: 0;
+
+    }
+    #blue-circle-1{
+        width: 170px;
+        height: 170px;
+        /* height: 120px; */
+        background-color: rgb(0,160,227);
+        border-radius: 50%;
+        border: 10px solid rgb(172, 231, 255);
+        display: flex;
+        position: absolute;
+    
+    }#blue-circle-2{
+        width: 70px;
+        height: 70px;
+        /* height: 120px; */
+        background-color: rgb(0,160,227);
+        border-radius: 50%;
+        border: 10px solid rgb(172, 231, 255);
+        display: flex;
+        position: absolute;
+    
+    }
+    #edward-1, #edward-2, #elon-1, #elon-2{
+        width: 150px;
+        position: relative;
+        top: -15px;
+        left: 10px;
+    }
+    #elon-2, #edward-2{
+        width: 70px;
+        top: -15px;
+        left: 0;
+    }
+    #elon-2{
+        width: 65px;
+        top: -10px;
+    }
+    #edward-1{
+        width: 150px;
+        left: 10px;
+        top: -35px;
+        
+    }
+    #elon-1-container{
+        flex-basis: 10%;
+    }
+    #edward-1-container{
+        position: relative;
+        top: -100px;
+        left: -20px;
+    }
+    #edward-2-container{
+        position: relative;
+        top: -10px;
+        right: -30px;
+    }
+    #elon-2-container{
+        position: relative;
+        top: 20px;
+        left: 40px;
+    }
+    
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./STYLES/vote.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Now</title>
+    <script src="./JAVASCRIPT/mapdata.js"></script>
+    <script src="./JAVASCRIPT/usmap.js"></script>
+    <script src="./JAVASCRIPT/vote.js" ></script>
+</head>
+<body>
+    <div id="container">
+        <div id="nav-bar">
+            <div id="left-nav">
+                <img id="check-logo" src="./IMAGES/CHECK MARK.png" alt="image of check mark">
+                <p>Election Day</p>
+            </div>
+            <div id="right-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a> </li>
+                    <li><a href="www.google.com/tejiri">FAQ's</a> </li>
+                </ul>
+            </div>
+        </div>
+        <button id="vote-now" ><a href="#elon-img-container">Vote Now &#x2190</a> </button>
+
+        <div id="map-container" style="max-width: 60%"> <!-- Keep map above fold -->
+            <div id="map"></div>
+        </div>
+
+        <div id="vote-domination-bar">
+            <div id="vote-count">
+                <h3 id="elon-vote-count">5 Votes</h3>
+                <h3 id="edward-vote-count">7 Votes</h3>
+            </div>
+            <div id="vote-bar">
+                <div id="elon-votes"></div>
+                <div id="edward-votes"></div>          
+    
+            </div>
+        </div>
+        <div id="elon-vs-edward">
+            <div id="elon-img-container">
+                <h3>Elon</h3>
+                <img id="elon-image" src="./IMAGES/elon vote.png" alt="portrait of elon musk"> 
+                <button id="vote-elon" >  VOTE</button>
+            </div>
+            <div id="edward-img-container">
+                <h3>Edward</h3>
+                <img id="edward-image" src="./IMAGES/edward vote.png" alt=""> 
+                <button id="vote-edward">  VOTE </button>
+            </div>
+        </div>
+        <div id="count-down">
+            <script src="./JAVASCRIPT/countdown.js" ></script>
+        </div>
+        <div id="how-to-vote">
+            <h2>How to Vote</h2>
+            <ol>
+                <li>Between the two contestants, click on the vote icon of your preferred contestant.</li>
+                <li>Confirm your vote by pressing Yes</li>
+            </ol>
+        </div>
+        <footer>
+            <a href="www.instagram.com/tejiri__TJ">Instagram</a>
+            <a href="www.instagram.com/tejiri__TJ">Facebook</a>
+            <a href="www.instagram.com/tejiri__TJ">Twitter</a>
+        </footer>
+    </div>
+    
+</body>
+</html>

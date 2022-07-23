@@ -1,0 +1,105 @@
+  /* This styles will be applied to devices with size less than 700 */
+  @media screen and (max-width: 700px) {
+    .nav-bar{
+        font-size: 0.8em;
+        justify-content: space-between;
+    }
+    .right-section ul{
+        margin-right: 20px;
+        
+    }
+  }
+
+ /* This styles will be applied to devices with size at least 768px */
+
+
+ @font-face {
+    font-family: 'Monument-Extended';
+    src: url(../FONTS/MonumentExtended-Regular.otf);
+  }
+  *{
+    font-family: Monument-Extended;
+  }
+ @media  screen and (min-width: 768px) {
+    .logo {
+        justify-content: flex-start;
+    }
+    
+    .cards {
+        flex-direction: row;
+        justify-content:space-around;
+        height: 100%;
+        padding: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 30rem;
+    }
+
+    .card:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .card-image {
+        width: 30rem;
+        height: 26rem;
+    }
+
+    .votes-number-edward, .votes-number-elon {
+        font-size: 3.5rem;
+    }
+
+    .vote-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .candidate-name {
+        font-size: 2rem;
+    }
+
+    .candidate-country {
+        font-size: 1.1rem;
+    }
+
+    .card-btn {
+        font-size: 2rem;
+    }
+ }
+
+ /* these styles will be applided  on devices that have a width of at leaset 1024px */
+ @media screen and (min-width: 1024px) {
+    .cards {
+        width: 70%;
+    }
+
+    .card:hover {
+        transform: translateY(-2rem);
+    }
+    
+    .card:hover .btn-edward,
+    .card:hover .btn-elon {
+        font-size: 2.5rem;
+    }
+
+    .btn-edward:hover {
+        background: var(--btn-red-hover);
+        
+    }
+
+    .btn-elon:hover {
+        background: var(--btn-light-blue-hover);
+    }
+
+    /* these styles will be applied on devices that have a widht of atleast 14040px */
+
+    @media  screen and (min-width:1400px) {
+        .cards {
+            width: 60%;
+        }
+    }
+
+
+ }
