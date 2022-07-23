@@ -106,13 +106,8 @@ button a{
     border: none;
     box-shadow:  rgba(77, 77, 77, 0.575) 2px 2px 1px;
 }
-#vote-now a{
-color: white;
-text-decoration: none;
-}
-#vote-now{
-    background-color: none;
-}
+
+
 button a:hover{
     padding-right: 50px;
     transition: padding-right 1s;
