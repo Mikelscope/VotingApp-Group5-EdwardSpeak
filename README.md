@@ -33,6 +33,7 @@ Daniel Mbazu - Javascript functionality and Voting Page
 
 LINK TO GITHUB PAGES
 https://mikelscope.github.io/VotingApp-Group5-EdwardSpeak/
+https://vercel.com/mikelscope/voting-app-group5-edward-speak
 
 
 LINK WITH WORKING JAVASCRIPT VOTING PAGE
