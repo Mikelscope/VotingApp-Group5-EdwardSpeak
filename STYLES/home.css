@@ -223,7 +223,7 @@ text-decoration: none;
         display: flex;
         flex-direction: column;
     }
-    button{
+    #left-items a{
         display: flex;
         align-items: center;
         justify-content: right;
@@ -341,7 +341,7 @@ text-decoration: none;
         display: flex;
         flex-direction: column;
     }
-    button{
+    #left-items a{
         display: flex;
         align-items: center;
         justify-content: right;
