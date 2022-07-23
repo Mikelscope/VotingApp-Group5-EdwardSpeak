@@ -71,7 +71,6 @@
     /* align-items: center; */
     justify-content: space-between;
     overflow: hidden;
-
     
     
 }
@@ -87,7 +86,7 @@ header{
 #main-paragraph{
     font-size: 0.8em;
     width: 60vw;
-    padding-top: 20px;
+    padding: 20px 0;
     font-family: poppins;
     
 
@@ -119,7 +118,6 @@ text-decoration: none;
     box-shadow:  rgb(77, 77, 77) 2px 2px 5px;
 
 }
-
 #blue-circle-1{
     width: 220px;
     height: 220px;
