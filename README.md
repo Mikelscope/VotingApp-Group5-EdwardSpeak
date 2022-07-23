@@ -27,9 +27,13 @@ Daniel Mbazu
 Okolosi Michael - UI and  Home Page 
 
 
-Daniel Mbazu - Voting Page
+Daniel Mbazu - Javascript functionality and Voting Page
 
 
 
 LINK TO GITHUB PAGES
 https://mikelscope.github.io/VotingApp-Group5-EdwardSpeak/
+
+
+LINK WITH WORKING JAVASCRIPT VOTING PAGE
+https://mikelscope.github.io/votingApp-David-VotingPage/
