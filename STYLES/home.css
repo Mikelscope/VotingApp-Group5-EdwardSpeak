@@ -96,7 +96,7 @@ em{
     font-weight: 300;
     font-style: normal;
 }
-button a{
+#left-items a {
     padding: 20px;
     background-color: rgb(0,160,227);
     color: white;
@@ -106,14 +106,20 @@ button a{
     border: none;
     box-shadow:  rgba(77, 77, 77, 0.575) 2px 2px 1px;
 }
-
-
-button a:hover{
+#left-items  a{
+color: white;
+text-decoration: none;
+}
+#left-items a{
+    background-color: none;
+}
+#left-items a:hover{
     padding-right: 50px;
     transition: padding-right 1s;
     box-shadow:  rgb(77, 77, 77) 2px 2px 5px;
 
 }
+
 #blue-circle-1{
     width: 220px;
     height: 220px;
