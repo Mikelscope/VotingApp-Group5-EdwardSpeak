@@ -36,24 +36,24 @@
     top: 0;
     z-index: 3;
 }
-#left-nav{
+.left-nav{
     display: flex;
     align-items: center;
     
 }
-#right-nav a{
+.right-nav a{
     margin-right: 30px;
     color: white;
     text-decoration: none;
 }
-#right-nav ul{
+.right-nav ul{
     list-style: none;
     text-align: right;
     display: inline-flex;
     margin-right: 70px;
 }
 
-#right-nav a:hover{
+.right-nav a:hover{
     color: black;
     transition: color 0.5s;
     background-color: white;
@@ -99,7 +99,7 @@
 #map-container{
     margin: auto;
 }
-#vote-count{
+.vote-count{
     display: flex;
     width: 70vw;
     align-items: center;
@@ -113,7 +113,7 @@
 #edward-vote-count{
     color: rgb(204,35,76);
 }
-#vote-bar{
+.vote-bar{
     width: 70vw;
     margin: auto;
     background-color: black;
@@ -130,19 +130,19 @@
     gap: 0px;
     column-gap: 0px;
 }
-#elon-img-container{
+.elon-img-container{
     background-color: rgb(0,160,227);
     width: 100%;
     text-align: right;
     position: relative;
     /* padding: 20px; */
 }
-#elon-img-container h3, #edward-img-container h3{
+.elon-img-container h3, .edward-img-container h3{
     color: white;
     position: absolute;
     padding: 20px;
 }
-#elon-img-container button, #edward-img-container button{
+.elon-img-container button, .edward-img-container button{
     background-color: white;
     text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 2px;;
     font-size: 1.7em;
@@ -152,31 +152,31 @@
     cursor: pointer;
     /* border: 2px solid green; */
 }
-#elon-img-container button, #edward-img-container button{
+.elon-img-container button, .edward-img-container button{
     background-color: white;
     color: red;
 }
 
 
 
-#edward-img-container{
+.edward-img-container{
     background-color: rgb(204,35,76);
     width: 100%;
 
     /* padding: 20px; */
 }
-#edward-img-container button, #elon-img-container button{
+.edward-img-container button, .elon-img-container button{
     width: 100%;
 }
 #elon-image, #edward-image{
     width: 100%;
 }
-#elon-img-container button{
+.elon-img-container button{
     border: 2px solid rgb(0,160,227);
     color: rgb(0,160,227);
     position: relative;
     left: 0;
-}#edward-img-container button{
+}.edward-img-container button{
     border: 2px solid rgb(204,35,76);
     color:rgb(204,35,76);
 }
@@ -217,7 +217,7 @@ footer a{
     #elon-vs-edward{
         min-width: 95vw;
     }
-    #vote-count{
+    .vote-count{
         display: flex;
         width: 95vw;
         align-items: center;
@@ -231,13 +231,13 @@ footer a{
     #edward-vote-count{
         color: rgb(204,35,76);
     }
-    #vote-bar{
+    .vote-bar{
         width: 70vw;
         margin: auto;
         background-color: black;
         height: 40px;
     }
-    #vote-count{
+    .vote-count{
         display: flex;
         width: 95w;
         align-items: center;
@@ -251,7 +251,7 @@ footer a{
     #edward-vote-count{
         color: rgb(204,35,76);
     }
-    #vote-bar{
+    .vote-bar{
         width: 95vw;
         margin: auto;
         background-color: black;
@@ -261,7 +261,7 @@ footer a{
         width: 70vw;
         font-size: 1.5em;
     }
-    #right-nav ul{
+    .right-nav ul{
         margin-right: 10px;
     }  
     #map-container{
