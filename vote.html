@@ -11,48 +11,61 @@
     <script src="./JAVASCRIPT/vote.js" ></script>
 </head>
 <body>
+    <!-- VOTING SECTION CONTAINER -->
     <div id="container">
+
+        <!-- NAV BAR AT PAGE TOP -->
         <div id="nav-bar">
-            <div id="left-nav">
+            <div class="left-nav">
                 <img id="check-logo" src="./IMAGES/CHECK MARK.png" alt="image of check mark">
                 <p>Election Day</p>
             </div>
-            <div id="right-nav">
+            <div class="right-nav">
                 <ul>
                     <li><a href="./index.html">Home</a> </li>
                     <li><a href="www.google.com/tejiri">FAQ's</a> </li>
                 </ul>
             </div>
         </div>
+
+        <!-- ANIMATED VOTE BUTTON -->
         <button id="vote-now" ><a href="#elon-img-container">Vote Now &#x2190</a> </button>
 
+        <!-- MAP -->
         <div id="map-container" style="max-width: 60%"> <!-- Keep map above fold -->
             <div id="map"></div>
         </div>
 
+        <!-- SECTION TO DISPLAY VOTE RESULT AND INFO -->
         <div id="vote-domination-bar">
-            <div id="vote-count">
+            <div class="vote-count">
                 <h3 id="elon-vote-count">5 Votes</h3>
                 <h3 id="edward-vote-count">7 Votes</h3>
             </div>
-            <div id="vote-bar">
+
+            <!-- VOTE COUNTS FOR ELON AND EDWARD -->
+            <div class="vote-bar">
                 <div id="elon-votes"></div>
                 <div id="edward-votes"></div>          
     
             </div>
         </div>
+
+        <!-- CONTAINER FOR ELON VS EWARD IMAGE -->
         <div id="elon-vs-edward">
-            <div id="elon-img-container">
+            <div class="elon-img-container">
                 <h3>Elon</h3>
                 <img id="elon-image" src="./IMAGES/elon vote.png" alt="portrait of elon musk"> 
                 <button id="vote-elon" >  VOTE</button>
             </div>
-            <div id="edward-img-container">
+            <div class="edward-img-container">
                 <h3>Edward</h3>
                 <img id="edward-image" src="./IMAGES/edward vote.png" alt=""> 
                 <button id="vote-edward">  VOTE </button>
             </div>
         </div>
+
+        <!-- COUNTDOWN TIMER -->
         <div id="count-down">
             <script src="./JAVASCRIPT/countdown.js" ></script>
         </div>
@@ -64,9 +77,9 @@
             </ol>
         </div>
         <footer>
-            <a href="www.instagram.com/tejiri__TJ">Instagram</a>
-            <a href="www.instagram.com/tejiri__TJ">Facebook</a>
-            <a href="www.instagram.com/tejiri__TJ">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
         </footer>
     </div>
     
