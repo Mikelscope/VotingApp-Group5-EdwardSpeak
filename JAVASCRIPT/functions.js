@@ -1,22 +1,55 @@
-const getCards = () => {
-  return candidates.map((candidate) => {
-    return `<div class="card">
-            <img src="../IMAGES/${candidate.id}.png"  class="card-image">
-            <div class="card-info">
-              <div class="candidate-votes">
-                <span class="votes-number-${candidate.id}">${candidate.votes}</span>
-                <span class="votes-text" onclick>VOTES</span>
-              </div>
-              <div class="line"></div>
-              <div class="candidate-info">
-                <span class="candidate-name">${candidate.name}</span>
-                <span class="candidate-country">${candidate.country}</span>
-              </div>
-            </div>
-            <button class="card-btn btn-${candidate.id}">VOTE</button>
-          </div>`;
-  });
-};
+// const getCards = () => {
+//   return candidates.map((candidate) => {
+//     return `<div class="card">
+//             <img src="../IMAGES/${candidate.id}.png"  class="card-image">
+//             <div class="card-info">
+//               <div class="candidate-votes">
+//                 <span class="votes-number-${candidate.id}">${candidate.votes}</span>
+//                 <span class="votes-text" onclick>VOTES</span>
+//               </div>
+//               <div class="line"></div>
+//               <div class="candidate-info">
+//                 <span class="candidate-name">${candidate.name}</span>
+//                 <span class="candidate-country">${candidate.country}</span>
+//               </div>
+//             </div>
+//             <button class="card-btn btn-${candidate.id}">VOTE</button>
+//           </div>`;
+//   });
+// };
+
+
+const getCardss = () => {
+  return candidates.map(candidate => {
+    return `
+    <div class="elon-vs-edward">
+    
+    <div class="card-img-container ${candidate.id}-img-container">
+        <h3>${candidate.firstName} <br> ${candidate.lastName} </h3>
+        <img class="card-image" src="./IMAGES/${candidate.id} vote.png" alt="${candidate.id}"> 
+        <button class="vote-text card-btn ${candidate.id}-btn " onclick>  VOTE</button>
+    </div>
+    
+</div>
+
+    
+    
+    `
+  })
+}
+
+const voteCounts = () => {
+  return candidates.map(candidate => {
+    return `
+    <div class="vote-count">
+<h3 class="card-btn ${candidate.id}-vote-count"> ${candidate.votes} Votes </h3>
+</div>
+    `
+  })
+}
+
+
+
 
 //   Adds one vote to the corresponding candidate
 function addVote(index, candidate, votesE1) {
@@ -45,12 +78,12 @@ const isWinner = (candidate, votes) => {
 // Shows who won and who lost
 const setWinnerLoser = (candidate) => {
   if (candidate === "edward") {
-    document.querySelector(".btn-edward").textContent = "WINNER";
+    document.querySelector(".edward-btn").textContent = "WINNER";
 
-    document.querySelector(".btn-elon").textContent = "LOSER";
+    document.querySelector(".elon-btn").textContent = "LOSER";
   } else {
-    document.querySelector(".btn-elon").textContent = "WINNER";
+    document.querySelector(".elon-btn").textContent = "WINNER";
 
-    document.querySelector(".btn-edward").textContent = "LOSER";
+    document.querySelector(".edward-btn").textContent = "LOSER";
   }
 }
