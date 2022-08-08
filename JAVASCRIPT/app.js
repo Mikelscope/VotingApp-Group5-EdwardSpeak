@@ -5,7 +5,7 @@ let winner = false;
 const cards = document.querySelector(".elon-vs-edward");
 
 // Render cards
-cards.innerHTML = getCardss();
+cards.innerHTML = getCards();
 
 // get a refernce to the votes div
 const votes = document.querySelector(".vote-count")

@@ -12,12 +12,12 @@
 </head>
 <body>
     <!-- VOTING SECTION CONTAINER -->
-    <div id="container">
+    <div class="container">
 
         <!-- NAV BAR AT PAGE TOP -->
-        <div id="nav-bar">
+        <div class="nav-bar">
             <div class="left-nav">
-                <img id="check-logo" src="./IMAGES/CHECK MARK.png" alt="image of check mark">
+                <img class="check-logo" src="./IMAGES/CHECK MARK.png" alt="image of check mark">
                 <p>Election Day</p>
             </div>
             <div class="right-nav">
@@ -29,51 +29,58 @@
         </div>
 
         <!-- ANIMATED VOTE BUTTON -->
-        <button id="vote-now" ><a href="#elon-img-container">Vote Now &#x2190</a> </button>
+        <button class="vote-now" ><a href="#elon-img-container">Vote for the Best Tech Lord </a> </button>
 
         <!-- MAP -->
-        <div id="map-container" style="max-width: 60%"> <!-- Keep map above fold -->
+        <div class="map-container" style="max-width: 60%"> <!-- Keep map above fold -->
             <div id="map"></div>
         </div>
 
         <!-- SECTION TO DISPLAY VOTE RESULT AND INFO -->
-        <div id="vote-domination-bar">
+        <div class="vote-domination-bar">
             <div class="vote-count">
-                <h3 id="elon-vote-count">5 Votes</h3>
-                <h3 id="edward-vote-count">7 Votes</h3>
+                <!-- <h3 class="elon-vote-count">5 Votes</h3>
+                <h3 class="edward-vote-count">7 Votes</h3> -->
             </div>
 
             <!-- VOTE COUNTS FOR ELON AND EDWARD -->
-            <div class="vote-bar">
-                <div id="elon-votes"></div>
-                <div id="edward-votes"></div>          
-    
-            </div>
+            <div class="vote-bar"> </div>
         </div>
 
         <!-- CONTAINER FOR ELON VS EWARD IMAGE -->
-        <div id="elon-vs-edward">
-            <div class="elon-img-container">
-                <h3>Elon</h3>
-                <img id="elon-image" src="./IMAGES/elon vote.png" alt="portrait of elon musk"> 
-                <button id="vote-elon" >  VOTE</button>
+        <!-- <div class="elon-vs-edward">
+            <div class="card-img-container elon-img-container">
+                <h3>Elon Musk</h3>
+                <img class="card-image" src="./IMAGES/elon vote.png" alt="elon"> 
+                <button class="vote-elon" >  VOTE</button>
             </div>
-            <div class="edward-img-container">
-                <h3>Edward</h3>
-                <img id="edward-image" src="./IMAGES/edward vote.png" alt=""> 
-                <button id="vote-edward">  VOTE </button>
+            
+            <div class="card-img-container">
+                <h3>Edward Campbell </h3>
+                <img class="card-image" src="./IMAGES/edward vote.png" alt="edward"> 
+                <button class="vote-edward">  VOTE </button>
             </div>
-        </div>
+        </div> -->
+
+          <!-- MAIN -->
+      <main>
+        <div class="elon-vs-edward"> </div>
+      </main>
+
+
+
+        
 
         <!-- COUNTDOWN TIMER -->
         <div id="count-down">
-            <script src="./JAVASCRIPT/countdown.js" ></script>
+            
         </div>
-        <div id="how-to-vote">
+
+        <div class="how-to-vote">
             <h2>How to Vote</h2>
             <ol>
-                <li>Between the two contestants, click on the vote icon of your preferred contestant.</li>
-                <li>Confirm your vote by pressing Yes</li>
+                <li>click on the vote icon of your preferred contestant.</li>
+                <li>A winner is determined after 10 vote counts</li>
             </ol>
         </div>
         <footer>
@@ -83,5 +90,11 @@
         </footer>
     </div>
     
+    
 </body>
+<script src="./JAVASCRIPT/countdown.js" ></script>
+<script src="./JAVASCRIPT/data.js"></script>
+<script src="./JAVASCRIPT/functions.js"></script>
+<script src="./JAVASCRIPT/app.js"></script>
+
 </html>

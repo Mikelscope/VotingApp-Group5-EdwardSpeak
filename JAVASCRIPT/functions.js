@@ -19,7 +19,7 @@
 // };
 
 
-const getCardss = () => {
+const getCards = () => {
   return candidates.map(candidate => {
     return `
     <div class="elon-vs-edward">
